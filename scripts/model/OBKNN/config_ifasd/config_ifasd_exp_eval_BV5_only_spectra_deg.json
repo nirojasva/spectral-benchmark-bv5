@@ -1,0 +1,30 @@
+{
+  "paths": {
+    "data_path": "datasets/raw/ScenariosV5_GTV2",
+    "plot_file_score": "notebooks/img_monitoring_score"
+  },
+  "experiment_config": {
+    "learner_name": "IForestASD",
+    "number_runs": 3,
+    "score_dir": "direct",
+    "sleep_time": 0,
+    "datasets_list": [
+      "RMX_",
+      "RNH_",
+      "RAR_",
+      "LAR_",
+      "HAR_",
+      "HNH_",
+      "LNH_"
+    ]
+  },
+  "hyperparameters": {
+    "window_size": null,
+    "p_window_size": 0.2
+  },
+  "data_processing": {
+    "cols_pos_fmin": 1,
+    "cols_pos_fmax": 2049,
+    "cols_pos_label": -1
+  }
+}

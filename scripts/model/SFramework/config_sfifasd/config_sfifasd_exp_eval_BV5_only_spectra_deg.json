@@ -1,0 +1,53 @@
+{
+  "paths": {
+    "data_path": "datasets/raw/ScenariosV5_GTV2",
+    "plot_file_score": "notebooks/img_monitoring_score"
+  },
+  "experiment_config": {
+    "learner_name": "SFIForestASD",
+    "number_runs": 3,
+    "score_dir": "direct",
+    "sleep_time": 0,
+    "datasets_list": [
+      "RMX_",
+      "RNH_",
+      "RAR_",
+      "LAR_",
+      "HAR_",
+      "HNH_",
+      "LNH_"
+    ]
+  },
+  "hyperparameters": {
+    "window_size": null,
+    "p_window_size": 0.02
+  },
+  "data_processing": {
+    "efeature": "Current",
+    "feature_parameters": {
+      "MomSpectra": {
+        "cols_pos_extra_f": 0,
+        "min_value": -0.06,
+        "max_value": 0
+      },
+      "Voltage": {
+        "cols_pos_extra_f": 2081,
+        "min_value": 1000,
+        "max_value": 2000
+      },
+      "Current": {
+        "cols_pos_extra_f": 2082,
+        "min_value": 7.75,
+        "max_value": 8.25
+      },
+      "Pressure": {
+        "cols_pos_extra_f": 2083,
+        "min_value": 1e-06,
+        "max_value": 1e-05
+      }
+    },
+    "cols_pos_fmin": 1,
+    "cols_pos_fmax": 2049,
+    "cols_pos_label": -1
+  }
+}

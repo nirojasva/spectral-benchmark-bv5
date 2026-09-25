@@ -1,0 +1,75 @@
+{
+  "paths": {
+    "data_path": "datasets/raw/ScenariosV5_GTV2",
+    "plot_file_interpretation": "notebooks/img_anomalies",
+    "plot_file_score": "notebooks/img_monitoring_score"
+  },
+  "experiment_config": {
+    "learner_name": "SFOnlineBootKNN",
+    "number_runs": 3,
+    "score_dir": "direct",
+    "sleep_time": 0,
+    "datasets_list": [
+      "RMX_",
+      "RNH_",
+      "RAR_",
+      "LAR_",
+      "HAR_",
+      "HNH_",
+      "LNH_"
+    ]
+  },
+  "hyperparameters": {
+    "transf": "ZNORM",
+    "window_size": null,
+    "p_window_size": 0.02,
+    "chunk_size": 240,
+    "ensemble_size": 240,
+    "no_bootstrapp": false,
+    "no_z_score": false,
+    "update_distance_with_abnormal": true,
+    "dmetric": "cityblock",
+    "algorithm": "brute",
+    "alpha_z_test": 0.05,
+    "alpha_ema": 0.01,
+    "type_dist": "largest",
+    "update_mode_stats": "welford",
+    "n_jobs": -1
+  },
+  "data_processing": {
+    "efeature": "Current",
+    "feature_parameters": {
+      "MomSpectra": {
+        "cols_pos_extra_f": 0,
+        "min_value": -0.06,
+        "max_value": 0
+      },
+      "Voltage": {
+        "cols_pos_extra_f": 2081,
+        "min_value": 1000,
+        "max_value": 2000
+      },
+      "Current": {
+        "cols_pos_extra_f": 2082,
+        "min_value": 7.75,
+        "max_value": 8.25
+      },
+      "Pressure": {
+        "cols_pos_extra_f": 2083,
+        "min_value": 1e-06,
+        "max_value": 1e-05
+      }
+    },
+    "min_z_score": 50,
+    "region_study": [
+      "386.45:393.38:N2",
+      "773.38:780.40:O2",
+      "652.47:659.53:H",
+      "304.46:311.54:OH",
+      "748.38:752.19:Ar"
+    ],
+    "cols_pos_fmin": 1,
+    "cols_pos_fmax": 2049,
+    "cols_pos_label": -1
+  }
+}
