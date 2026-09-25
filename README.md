@@ -1,7 +1,6 @@
 # Benchmark for Anomaly Detection on Spectral Data Streams - BV5
 
-This project is a benchmark (BV5) for anomaly detection on spectral data streams from Optical Emission Spectrometry with a focus on degassing cycles. We evaluate and compare recent multivariate tabular methods against the Online Bootstrapping K-Nearest Neighbor algorithm.
-
+This project is a benchmark (BV5) for anomaly detection on spectral data streams from Optical Emission Spectroscopy with a focus on degassing cycle scenarios. We evaluate and compare recent multivariate tabular methods for streaming data and the Online Bootstrapping K-Nearest Neighbor algorithm for spectral data streams.
 
 ## Installation
 
