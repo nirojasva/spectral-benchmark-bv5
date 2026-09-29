@@ -87,7 +87,7 @@ nohup python scripts/run_experiments_online_ad_eval_for_other_features_PV.py --m
 
 # Run the sota_and_own_tuning_pds_pv summary, saving its logs to 'sota_and_own_tuning_pds_pv.log' (summarize tuning)
 source env_analysis/bin/activate
-nohup python scripts/gen_summaries_online_anomaly_detectors.py --mode sota_and_own_tuning_pds_pv > sota_and_own_tuning_pds_pv.log 2>&1 &
+nohup python scripts/gen_summaries_online_anomaly_detectors.py --mode sota_and_own_tuning_pds_pv_inv_score > sota_and_own_tuning_pds_pv_inv_score.log 2>&1 &
 
 # Run the sota_and_own_eval_pds_pv_bv3_bv4_bv5_inv_score summary, saving its logs to 'sota_and_own_eval_pds_pv_bv3_bv4_bv5_inv_score.log' (summarize all spectral evaluations)
 source env_analysis/bin/activate
@@ -100,7 +100,7 @@ nohup python scripts/gen_summaries_online_anomaly_detectors.py --mode sota_and_o
 
 # Run the sota_and_own_eval_bv5_gtv2_for_fplasma_fcurrent_pv summary, saving its logs to 'sota_and_own_eval_bv5_gtv2_for_fplasma_fcurrent_pv.log' (summarize multivariate evaluations in BV5)
 source env_analysis/bin/activate
-nohup python scripts/gen_summaries_online_anomaly_detectors.py --mode sota_and_own_eval_bv5_gtv2_for_fplasma_fcurrent_pv > sota_and_own_eval_bv5_gtv2_for_fplasma_fcurrent_pv.log 2>&1 &
+nohup python scripts/gen_summaries_online_anomaly_detectors.py --mode sota_and_own_eval_bv5_gtv2_for_fplasma_fcurrent_pv_inv_score > sota_and_own_eval_bv5_gtv2_for_fplasma_fcurrent_pv_inv_score.log 2>&1 &
 
 #######################################
 # Scripts for Preliminary Test:

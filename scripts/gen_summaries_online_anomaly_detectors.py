@@ -20,7 +20,7 @@ def get_summary_config(mode, current_dir, output_dir):
     Returns the configuration for input directories and output file path
     based on the selected mode.
     """
-    if mode == 'sota_and_own_tuning_pds_pv':
+    if mode == 'sota_and_own_tuning_pds_pv_inv_score':
         logging.info("Selected Mode: 1. Summarizing SOTA and Own Method Tuning (Multivariate DS 116_TAO + Spectral DS DA3)")
         input_dirs = [
             current_dir / "datasets" / "processed_sota_method_tuning_public_ds",
@@ -28,7 +28,7 @@ def get_summary_config(mode, current_dir, output_dir):
             current_dir / "datasets" / "processed_own_method_V2_tuning_public_ds",
             current_dir / "datasets" / "processed_own_method_V2_tuning_pv_ds"
         ]
-        output_file_path = output_dir / 'summary_results_sota_and_own_method_tuning_pds_and_pv.xlsx'
+        output_file_path = output_dir / 'summary_results_sota_and_own_method_tuning_pds_and_pv_inv_score.xlsx'
     
     elif mode == 'sota_and_own_eval_pds_pv_bv3_bv4_bv5_inv_score':
         logging.info("Selected Mode: 2. Summarizing SOTA and Own Method Evaluation (Multivariate DS + Spectral DS BV3, BV4 and BV5)")
@@ -54,7 +54,7 @@ def get_summary_config(mode, current_dir, output_dir):
         ]
         output_file_path = output_dir / 'summary_results_sota_and_own_method_eval_pv_bv5_with_current_gtv2_ds_inv_score_v2.xlsx'       
     
-    elif mode == 'sota_and_own_eval_bv5_gtv2_for_fplasma_fcurrent_pv':
+    elif mode == 'sota_and_own_eval_bv5_gtv2_for_fplasma_fcurrent_pv_inv_score':
         logging.info("Selected Mode: 4. Summarizing SOTA and Own Method Evaluation (Multivariate Data in BV5 for plasma features and Current)")
         input_dirs = [
             current_dir / "datasets" / "processed_own_method_V2_eval_pv_bv5_gtv2_ds_for_fcurrent",
@@ -62,7 +62,7 @@ def get_summary_config(mode, current_dir, output_dir):
             current_dir / "datasets" / "processed_sota_method_eval_pv_bv5_gtv2_ds_for_fcurrent",
             current_dir / "datasets" / "processed_sota_method_eval_pv_bv5_gtv2_ds_for_fplasma",
         ]
-        output_file_path = output_dir / 'summary_results_sota_and_own_method_eval_pv_bv5_for_fplasma_fcurrent_pv.xlsx'   
+        output_file_path = output_dir / 'summary_results_sota_and_own_method_eval_pv_bv5_for_fplasma_fcurrent_pv_inv_score.xlsx'   
         
     elif mode == 'test':
         logging.info("Selected Mode: 5. Summarizing Test directories")
@@ -225,10 +225,10 @@ def main():
     
     # Define the available experiment modes
     modes = [
-        'sota_and_own_tuning_pds_pv',
+        'sota_and_own_tuning_pds_pv_inv_score',
         'sota_and_own_eval_pds_pv_bv3_bv4_bv5_inv_score',
         'sota_and_own_eval_bv5_gtv2_w_current_pv_inv_score_v2',   
-        'sota_and_own_eval_bv5_gtv2_for_fplasma_fcurrent_pv',
+        'sota_and_own_eval_bv5_gtv2_for_fplasma_fcurrent_pv_inv_score',
         'test'
     ]
     
