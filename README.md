@@ -97,7 +97,7 @@ The datasets consist of several columns. The index starts from 0.
 | 2086 | REGULATIONON | Boolean | 0 for False and 1 for True. Indicates if the regulation is active |
 | 2087 | PLASMAON | Boolean | 0 for False and 1 for True. Indicates if the plasma is turned on |
 | 2088 | PLASMAOFFFORCED | Boolean | 0 for False and 1 for True. Indicates if the plasma was forced to off |
-| 2089 | PLASMASTATUS | Boolean | 0 for None, 1 for PlasmaOffForcedByUser, 2 for PlasmaOffConditionsAreNotGood, 3 for PlasmaOn |
+| 2089 | PLASMASTATUS | Float | 0 for None, 1 for PlasmaOffForcedByUser, 2 for PlasmaOffConditionsAreNotGood, 3 for PlasmaOn |
 | 2090 | WARNING | Boolean | 0 for False and 1 for True. Indicates an active warning |
 | 2091 | ISPOWERSAVINGMODE | Boolean | 0 for False and 1 for True. Indicates if the system is in power saving mode |
 | 2092 | ISTEMPERATUREFAULT | Boolean | 0 for False and 1 for True. Indicates if the temperature is out of range |
