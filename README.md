@@ -109,9 +109,9 @@ The datasets consist of several columns. The index starts from 0.
 | 2098 | ALPSSerial | String | A Serial Number |
 | 2099 | DOWN | Boolean | 0 for False and 1 for True. Indicates Data Controller is down |
 | 2100 | DOWNMSG | String | Message providing details if the system is down |
-| 2101 | SENSORPRESSURECHAMBER1 | Float | Pressure readings from the sensor in other connected chamber |
-| 2102 | ETATREALTIMELIFE | String/Integer | 0 for False and 1 for True. Indicates the valve for leaks is open (true) or closed (false) under automated scenarios |
-| 2103 | ANOMALY? | Boolean/String | Indicator for detected anomalies |
+| 2101 | SENSORPRESSURECHAMBER1 | Float | Pressure readings from an alternative connected chamber |
+| 2102 | ETATREALTIMELIFE | Integer | 0 for False and 1 for True. Indicates if a valve for leaks is open (true) or closed (false) under automated scenarios |
+| 2103 | ANOMALY? | Boolean | 0 for False and 1 for True. Indicator for defined anomalies |
 
 #### Region Study Details
 

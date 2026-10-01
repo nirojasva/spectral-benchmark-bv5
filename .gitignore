@@ -8,6 +8,18 @@ datasets/*
 !datasets/raw/
 datasets/raw/*
 !datasets/raw/ScenariosV5_test/
+!datasets/raw/ScenariosV3_lite/
+datasets/raw/ScenariosV3_lite/*
+!datasets/raw/ScenariosV3_lite/.gitkeep
+!datasets/raw/ScenariosV4_lite/
+datasets/raw/ScenariosV4_lite/*
+!datasets/raw/ScenariosV4_lite/.gitkeep
+!datasets/raw/TSB-AD-M-lite/
+datasets/raw/TSB-AD-M-lite/*
+!datasets/raw/TSB-AD-M-lite/.gitkeep
+!datasets/raw/ScenariosV5_GTV2/
+datasets/raw/ScenariosV5_GTV2/*
+!datasets/raw/ScenariosV5_GTV2/.gitkeep
 
 /sota_pv_tuning.log
 /sota_pds_tuning.log
