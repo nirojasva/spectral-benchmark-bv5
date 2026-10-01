@@ -97,7 +97,7 @@ The datasets consist of several columns. The index starts from 0.
 | 2086 | REGULATIONON | Boolean | 0 for False and 1 for True. Indicates if the regulation is active |
 | 2087 | PLASMAON | Boolean | 0 for False and 1 for True. Indicates if the plasma is turned on |
 | 2088 | PLASMAOFFFORCED | Boolean | 0 for False and 1 for True. Indicates if the plasma was forced to off |
-| 2089 | PLASMASTATUS | Integer | 0 for None, 1 for PlasmaOffForcedByUser, 2 for PlasmaOffConditionsAreNotGood, 3 for PlasmaOn |
+| 2089 | PLASMASTATUS | Boolean | 0 for None, 1 for PlasmaOffForcedByUser, 2 for PlasmaOffConditionsAreNotGood, 3 for PlasmaOn |
 | 2090 | WARNING | Boolean | 0 for False and 1 for True. Indicates an active warning |
 | 2091 | ISPOWERSAVINGMODE | Boolean | 0 for False and 1 for True. Indicates if the system is in power saving mode |
 | 2092 | ISTEMPERATUREFAULT | Boolean | 0 for False and 1 for True. Indicates if the temperature is out of range |
@@ -110,7 +110,7 @@ The datasets consist of several columns. The index starts from 0.
 | 2099 | DOWN | Boolean | 0 for False and 1 for True. Indicates Data Controller is down |
 | 2100 | DOWNMSG | String | Message providing details if the system is down |
 | 2101 | SENSORPRESSURECHAMBER1 | Float | Pressure readings from an alternative connected chamber |
-| 2102 | ETATREALTIMELIFE | Integer | 0 for False and 1 for True. Indicates if a valve for leaks is open (true) or closed (false) under automated scenarios |
+| 2102 | ETATREALTIMELIFE | Boolean | 0 for False and 1 for True. Indicates if a valve for leaks is open (true) or closed (false) under automated scenarios |
 | 2103 | ANOMALY? | Boolean | 0 for False and 1 for True. Indicator for defined anomalies |
 
 #### Region Study Details
@@ -135,6 +135,6 @@ bash scripts/run_experiments.bash
 
 ## Analysing Datasets
 
-* Show characteristics of datasets such as wavelengths in time, pressure, and current: `notebooks/0_1_TSDA_Original_Sources.ipynb`
-* Summarize datasets under SF: `scripts/summary_spectral_ds.py`
+* Analysis of characteristics of datasets such as wavelengths in time, pressure, and current: `notebooks/0_1_TSDA_Original_Sources.ipynb`
+* Summary of datasets under Subset Framework (SF): `scripts/summary_spectral_ds.py`
 
